@@ -13,6 +13,7 @@
 		713443E1229BDB220071B8E4 /* BrightcovePlayerPosterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 713443DA229BDB220071B8E4 /* BrightcovePlayerPosterManager.m */; };
 		713443E2229BDB220071B8E4 /* BrightcovePlayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 713443DB229BDB220071B8E4 /* BrightcovePlayerUtil.m */; };
 		713443E3229BDB220071B8E4 /* BrightcovePlayerPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = 713443DC229BDB220071B8E4 /* BrightcovePlayerPoster.m */; };
+		E6316BBAE414EBD9C0B46218 /* libPods-react-native-brightcove-player.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E14C60EF73DD47627E28DC /* libPods-react-native-brightcove-player.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		524F7165AEAB66DFA909DD33 /* Pods-react-native-brightcove-player.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react-native-brightcove-player.release.xcconfig"; path = "Target Support Files/Pods-react-native-brightcove-player/Pods-react-native-brightcove-player.release.xcconfig"; sourceTree = "<group>"; };
 		7100FCB320A432C40014A205 /* libreact-native-brightcove-player.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libreact-native-brightcove-player.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		713443D2229BDB220071B8E4 /* BrightcovePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrightcovePlayer.m; sourceTree = "<group>"; };
 		713443D3229BDB220071B8E4 /* BrightcovePlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrightcovePlayerManager.h; sourceTree = "<group>"; };
@@ -41,6 +43,8 @@
 		713443DB229BDB220071B8E4 /* BrightcovePlayerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrightcovePlayerUtil.m; sourceTree = "<group>"; };
 		713443DC229BDB220071B8E4 /* BrightcovePlayerPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrightcovePlayerPoster.m; sourceTree = "<group>"; };
 		713443DD229BDB220071B8E4 /* BrightcovePlayerPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrightcovePlayerPoster.h; sourceTree = "<group>"; };
+		8CBB4336C1968F9A7E1C5D56 /* Pods-react-native-brightcove-player.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react-native-brightcove-player.debug.xcconfig"; path = "Target Support Files/Pods-react-native-brightcove-player/Pods-react-native-brightcove-player.debug.xcconfig"; sourceTree = "<group>"; };
+		E7E14C60EF73DD47627E28DC /* libPods-react-native-brightcove-player.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-react-native-brightcove-player.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6316BBAE414EBD9C0B46218 /* libPods-react-native-brightcove-player.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +75,8 @@
 				713443D6229BDB220071B8E4 /* BrightcovePlayerUtil.h */,
 				713443DB229BDB220071B8E4 /* BrightcovePlayerUtil.m */,
 				7100FCB420A432C40014A205 /* Products */,
+				75BCB96D819718A365561FC5 /* Pods */,
+				A26A8D008CFF6C2CC381A9B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +88,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		75BCB96D819718A365561FC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CBB4336C1968F9A7E1C5D56 /* Pods-react-native-brightcove-player.debug.xcconfig */,
+				524F7165AEAB66DFA909DD33 /* Pods-react-native-brightcove-player.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A26A8D008CFF6C2CC381A9B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7E14C60EF73DD47627E28DC /* libPods-react-native-brightcove-player.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,6 +113,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7100FCBC20A432C40014A205 /* Build configuration list for PBXNativeTarget "react-native-brightcove-player" */;
 			buildPhases = (
+				EDB7B6E7F61417F2EBEBC355 /* [CP] Check Pods Manifest.lock */,
 				7100FCAF20A432C40014A205 /* Sources */,
 				7100FCB020A432C40014A205 /* Frameworks */,
 				7100FCB120A432C40014A205 /* CopyFiles */,
@@ -131,6 +157,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EDB7B6E7F61417F2EBEBC355 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-react-native-brightcove-player-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7100FCAF20A432C40014A205 /* Sources */ = {
@@ -255,6 +306,7 @@
 		};
 		7100FCBD20A432C40014A205 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CBB4336C1968F9A7E1C5D56 /* Pods-react-native-brightcove-player.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -279,6 +331,7 @@
 		};
 		7100FCBE20A432C40014A205 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 524F7165AEAB66DFA909DD33 /* Pods-react-native-brightcove-player.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
