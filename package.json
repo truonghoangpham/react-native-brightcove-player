@@ -7,6 +7,10 @@
     "type": "git",
     "url": "git@github.com:manse/react-native-brightcove-player.git"
   },
+  "scripts": {
+    "setup:buttonModule": "cp -R src example/node_modules/react-native-brightcove-player",
+    "setup:index": "cp index.js example/node_modules/react-native-brightcove-player"
+  },
   "bugs": {
     "url": "https://github.com/manse/react-native-brightcove-player/issues"
   },
@@ -22,6 +26,7 @@
   "homepage": "https://github.com/manse/react-native-brightcove-player",
   "dependencies": {
     "prop-types": "^15.5.10",
+    "react-native-brightcove-player": "^1.7.0",
     "react-native-orientation": "^3.1.3"
   }
 }

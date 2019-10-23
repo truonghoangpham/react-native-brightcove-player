@@ -4,6 +4,7 @@ const BrightcovePlayerUtil = require('./src/BrightcovePlayerUtil');
 const BCPlayer = require('./src/BCPlayer');
 const ScrollView = require('./src/ScrollView');
 const PlayerEventTypes = require('./src/PlayerEventTypes');
+const BrightcoveCastButtonComponent = require('./src/BrightcoveCastButton');
 
 module.exports = {
   BCPlayer: BCPlayer,
@@ -11,5 +12,6 @@ module.exports = {
   BrightcovePlayerPoster: BrightcovePlayerPoster,
   BrightcovePlayerUtil: BrightcovePlayerUtil,
   ScrollView: ScrollView,
-  PlayerEventTypes: PlayerEventTypes
+  PlayerEventTypes: PlayerEventTypes,
+  BrightcoveCastButtonComponent: BrightcoveCastButtonComponent
 };

@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import { ScrollView, StyleSheet, View, Image, Text } from 'react-native';
 import { Header } from 'react-navigation';
-import {BCPlayer} from 'react-native-brightcove-player';
+import {BCPlayer, BrightcoveCastButtonComponent} from 'react-native-brightcove-player';
 
-const ACCOUNT_ID = '1872491397001';
-const POLICY_KEY = 'BCpkADawqM2kD-MtMQswS0cLWgf553m4yFUj8vRkvNVw6wybPb1CSVo3Y4mPyR7RQPv5zMoJbxYZpJMBeHhHJYFW4_FIfrvRvid1_xNlUCkCr8mdh35esbt0gJsqi-C_zIXH8xpXRIeiM_44';
-const VIDEO_ID = '4089564165001';
+// defaut
+// const ACCOUNT_ID = '1872491397001';
+// const POLICY_KEY = 'BCpkADawqM2kD-MtMQswS0cLWgf553m4yFUj8vRkvNVw6wybPb1CSVo3Y4mPyR7RQPv5zMoJbxYZpJMBeHhHJYFW4_FIfrvRvid1_xNlUCkCr8mdh35esbt0gJsqi-C_zIXH8xpXRIeiM_44';
+// const VIDEO_ID = '4089564165001';
+
+// client
+const ACCOUNT_ID = '5827902662001';
+const POLICY_KEY = 'BCpkADawqM0tLnRzzvC48QKoxR6wZ67co7_6Y6y3VU61Sr63hckUD1e_R-xGqO0UKCoN1Xz9eEqRkCiUlVIjLX9hVuv0cLyCLhTCjbKbvd48FA7ghvSx2man10PPhR7R_qwcW13C2ynFFlty';
+const VIDEO_ID = '6087635303001';
 
 const AppHeader = (headerProps) => <Header {... headerProps} />;
 
@@ -41,7 +47,7 @@ export default class VideoHeader extends Component {
 					}}
 					rotateToFullScreen
 				/>
-
+				<BrightcoveCastButtonComponent />
 				<ScrollView style={styles.scrollView} contentContainerStyle={{flexGrow:1}}>
 					<View style={styles.articleContainer}>
 						<Text style={styles.h1}>Island wants to become world’s first time-free zone</Text>

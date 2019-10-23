@@ -23,7 +23,7 @@
     }
     
     // More Info @ https://developers.google.com/cast/docs/ios_sender/integrate#initialize_the_cast_context
-    GCKDiscoveryCriteria *discoveryCriteria = [[GCKDiscoveryCriteria alloc] initWithApplicationID:@"4F8B3483"];
+    GCKDiscoveryCriteria *discoveryCriteria = [[GCKDiscoveryCriteria alloc] initWithApplicationID: kGCKDefaultMediaReceiverApplicationID];//@"4F8B3483"
     GCKCastOptions *options = [[GCKCastOptions alloc] initWithDiscoveryCriteria:discoveryCriteria];
     [GCKCastContext setSharedInstanceWithOptions:options];
     
@@ -51,11 +51,16 @@
 }
 
 - (void)setup {
+    
+    [BCOVGoogleCastManager sharedManager].delegate = self;
+
     _playbackController = [BCOVPlayerSDKManager.sharedManager createPlaybackController];
     _playbackController.delegate = self;
     _playbackController.autoPlay = NO;
     _playbackController.autoAdvance = YES;
     [_playbackController setAllowsExternalPlayback:YES];
+
+    [self.playbackController addSessionConsumer:BCOVGoogleCastManager.sharedManager];
 
     _playerView = [[BCOVPUIPlayerView alloc] initWithPlaybackController:self.playbackController options:nil controlsView:[BCOVPUIBasicControlView basicControlViewWithVODLayout]];
     _playerView.delegate = self;
@@ -67,6 +72,11 @@
 
     _targetVolume = 1.0;
     _autoPlay = NO;
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+    selector:@selector(castDeviceDidChange:)
+        name:kGCKCastStateDidChangeNotification
+      object:[GCKCastContext sharedInstance]];
 
     [self addSubview:_playerView];
 }
@@ -227,6 +237,38 @@
     }];
 }
 
+#pragma mark - BCOVGoogleCastManagerDelegate
+
+- (void)switchedToRemotePlayback
+{
+//    self.videoContainer.hidden = YES;
+}
+
+- (void)switchedToLocalPlayback:(NSTimeInterval)lastKnownStreamPosition withError:(NSError *)error
+{
+    if (lastKnownStreamPosition > 0)
+    {
+        [self.playbackController play];
+    }
+//    self.videoContainer.hidden = NO;
+    
+    if (error)
+    {
+        NSLog(@"Switched to local playback with error: %@", error.localizedDescription);
+    }
+}
+
+- (void)currentCastedVideoDidComplete
+{
+//    self.videoContainer.hidden = YES;
+}
+
+- (void)suitableSourceNotFound
+{
+    NSLog(@"Suitable source for video not found!");
+}
+
+#pragma mark - BCOVPlaybackControllerDelegate
 - (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didReceiveLifecycleEvent:(BCOVPlaybackSessionLifecycleEvent *)lifecycleEvent {
 
     [self createAirplayIconOverlay];
@@ -519,4 +561,22 @@
     });
 }
 
+#pragma mark - Misc
+- (void)castDeviceDidChange:(NSNotification *)notification
+{
+    switch ([GCKCastContext sharedInstance].castState) {
+        case GCKCastStateNoDevicesAvailable:
+            NSLog(@"Cast Status: No Devices Available");
+            break;
+        case GCKCastStateNotConnected:
+            NSLog(@"Cast Status: Not Connected");
+            break;
+        case GCKCastStateConnecting:
+            NSLog(@"Cast Status: Connecting");
+            break;
+        case GCKCastStateConnected:
+            NSLog(@"Cast Status: Connected");
+            break;
+    }
+}
 @end

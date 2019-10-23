@@ -12,6 +12,9 @@
 #import <React/RCTBridge.h>
 #import <React/UIView+React.h>
 #import <AVKit/AVKit.h>
+#import <GoogleCast/GoogleCast.h>
+#import <BrightcovePlayerSDK/BrightcovePlayerSDK.h>
+#import <BrightcoveGoogleCast/BrightcoveGoogleCast.h>
 
 @interface BrightcovePlayer : UIView<BCOVOfflineVideoManagerDelegate>
 
