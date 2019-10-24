@@ -268,12 +268,16 @@
 					"$(PROJECT_DIR)",
 					"$(SRCROOT)/../example/Pods/Brightcove-Player-Core/**",
 					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-Core/**",
+					"$(SRCROOT)/../../../ios/Pods/google-cast-sdk/**",
+					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-GoogleCast",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(BUILT_PRODUCTS_DIR)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../example/ios/Pods/Brightcove-Player-Core/**",
 					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-Core/**",
+					"$(SRCROOT)/../../../ios/Pods/google-cast-sdk/**",
+					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-GoogleCast/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,12 +296,16 @@
 					"$(PROJECT_DIR)",
 					"$(SRCROOT)/../example/Pods/Brightcove-Player-Core/**",
 					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-Core/**",
+					"$(SRCROOT)/../../../ios/Pods/google-cast-sdk/**",
+					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-GoogleCast",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(BUILT_PRODUCTS_DIR)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../example/ios/Pods/Brightcove-Player-Core/**",
 					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-Core/**",
+					"$(SRCROOT)/../../../ios/Pods/google-cast-sdk/**",
+					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-GoogleCast/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
