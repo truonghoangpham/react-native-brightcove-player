@@ -269,7 +269,7 @@
 					"$(SRCROOT)/../example/Pods/Brightcove-Player-Core/**",
 					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-Core/**",
 					"$(SRCROOT)/../../../ios/Pods/google-cast-sdk/**",
-					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-GoogleCast",
+					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-GoogleCast/**",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(BUILT_PRODUCTS_DIR)",
@@ -297,7 +297,7 @@
 					"$(SRCROOT)/../example/Pods/Brightcove-Player-Core/**",
 					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-Core/**",
 					"$(SRCROOT)/../../../ios/Pods/google-cast-sdk/**",
-					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-GoogleCast",
+					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-GoogleCast/**",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(BUILT_PRODUCTS_DIR)",

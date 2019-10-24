@@ -1,8 +1,5 @@
 #import "BrightcoveCastButton.h"
 
-@interface BrightcoveCastButton : RCTViewManager
-@end
-
 @implementation BrightcoveCastButton
 
 RCT_EXPORT_MODULE(BrightcoveCastButton)

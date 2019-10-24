@@ -3,8 +3,6 @@
 #import <React/RCTUIManager.h>
 #import <GoogleCast/GoogleCast.h>
 
-#ifndef BrightcoveCastButton_h
-#define BrightcoveCastButton_h
+@interface BrightcoveCastButton : RCTViewManager
 
-
-#endif /* BrightcoveCastButton_h */
+@end
