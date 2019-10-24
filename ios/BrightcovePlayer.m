@@ -20,7 +20,7 @@
 
     _playbackController = [BCOVPlayerSDKManager.sharedManager createPlaybackController];
     _playbackController.delegate = self;
-    _playbackController.autoPlay = NO;
+    _playbackController.autoPlay = YES;
     _playbackController.autoAdvance = YES;
     [_playbackController setAllowsExternalPlayback:YES];
 
