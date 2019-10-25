@@ -268,7 +268,7 @@
 					"$(PROJECT_DIR)",
 					"$(SRCROOT)/../example/Pods/Brightcove-Player-Core/**",
 					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-Core/**",
-					"$(SRCROOT)/../../../ios/Pods/google-cast-sdk/**",
+					"$(SRCROOT)/../../../ios/Pods/google-cast-sdk-no-bluetooth/**",
 					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-GoogleCast/**",
 				);
 				HEADER_SEARCH_PATHS = (
@@ -276,7 +276,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../example/ios/Pods/Brightcove-Player-Core/**",
 					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-Core/**",
-					"$(SRCROOT)/../../../ios/Pods/google-cast-sdk/**",
+					"$(SRCROOT)/../../../ios/Pods/google-cast-sdk-no-bluetooth/**",
 					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-GoogleCast/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
@@ -296,7 +296,7 @@
 					"$(PROJECT_DIR)",
 					"$(SRCROOT)/../example/Pods/Brightcove-Player-Core/**",
 					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-Core/**",
-					"$(SRCROOT)/../../../ios/Pods/google-cast-sdk/**",
+					"$(SRCROOT)/../../../ios/Pods/google-cast-sdk-no-bluetooth/**",
 					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-GoogleCast/**",
 				);
 				HEADER_SEARCH_PATHS = (
@@ -304,7 +304,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../example/ios/Pods/Brightcove-Player-Core/**",
 					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-Core/**",
-					"$(SRCROOT)/../../../ios/Pods/google-cast-sdk/**",
+					"$(SRCROOT)/../../../ios/Pods/google-cast-sdk-no-bluetooth/**",
 					"$(SRCROOT)/../../../ios/Pods/Brightcove-Player-GoogleCast/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";

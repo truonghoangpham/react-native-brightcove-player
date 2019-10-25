@@ -4,25 +4,30 @@ PODS:
   - Brightcove-Player-Core/default (6.4.4)
   - Brightcove-Player-GoogleCast (6.4.5):
     - Brightcove-Player-Core (= 6.4.4)
-    - google-cast-sdk (= 4.3.0)
-  - google-cast-sdk (4.3.0):
-    - google-cast-sdk/Core (= 4.3.0)
-  - google-cast-sdk/Core (4.3.0)
+    - google-cast-sdk-no-bluetooth
+  - google-cast-sdk-no-bluetooth (4.4.5):
+    - google-cast-sdk-no-bluetooth/Core (= 4.4.5)
+    - Protobuf (~> 3.0)
+  - google-cast-sdk-no-bluetooth/Core (4.4.5):
+    - Protobuf (~> 3.0)
+  - Protobuf (3.10.0)
 
 DEPENDENCIES:
   - Brightcove-Player-GoogleCast
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - google-cast-sdk
+    - google-cast-sdk-no-bluetooth
+    - Protobuf
   https://github.com/truonghoangpham123/BrightcoveSpecs.git:
     - Brightcove-Player-Core
     - Brightcove-Player-GoogleCast
 
 SPEC CHECKSUMS:
   Brightcove-Player-Core: 68e5ebe8c801064f46d92525f64753e509245596
-  Brightcove-Player-GoogleCast: bfcda2765589affa874054eb05bf2d673217a82f
-  google-cast-sdk: 57cd67b4a0966802b2738fcbbc103125c98cc8a1
+  Brightcove-Player-GoogleCast: 4702f84f5ffcc7633f32654de4564363190dd946
+  google-cast-sdk-no-bluetooth: c5e18481d73d491d1464d60d592a7357d23bc300
+  Protobuf: a4dc852ad69c027ca2166ed287b856697814375b
 
 PODFILE CHECKSUM: 8c9f8557491252708c0fa67b7dfa6c767e1e31cc
 

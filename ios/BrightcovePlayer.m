@@ -205,7 +205,7 @@
 
 - (void)switchedToRemotePlayback
 {
-//    self.videoContainer.hidden = YES;
+
 }
 
 - (void)switchedToLocalPlayback:(NSTimeInterval)lastKnownStreamPosition withError:(NSError *)error
@@ -214,7 +214,6 @@
     {
         [self.playbackController play];
     }
-//    self.videoContainer.hidden = NO;
     
     if (error)
     {
@@ -224,7 +223,7 @@
 
 - (void)currentCastedVideoDidComplete
 {
-//    self.videoContainer.hidden = YES;
+
 }
 
 - (void)suitableSourceNotFound
